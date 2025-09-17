@@ -1,0 +1,30 @@
+# Python cache and compiled artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test and coverage outputs
+.pytest_cache/
+.cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local configuration
+*.log
+.DS_Store

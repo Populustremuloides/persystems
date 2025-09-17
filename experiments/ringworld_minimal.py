@@ -2,6 +2,13 @@
 CLI to run the ring-world active inference demo and plot results.
 """
 import argparse
+import sys
+from pathlib import Path
+
+# Ensure project root is on sys.path when running as a script
+if __package__ is None or __package__ == '':
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 import numpy as np
 from persystems.gm import GenerativeModel
 from persystems.inference import bayes_predict, bayes_update, belief_entropy
